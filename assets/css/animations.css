@@ -1,0 +1,13 @@
+.product:hover > .product-info > .product-buttons {
+    visibility: visible;
+    transition: all 400ms ease-out;
+}
+
+.product:hover::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 289px;
+    height: 100%;
+    border: 0.1px solid #b2b2b2;
+}
