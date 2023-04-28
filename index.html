@@ -7,6 +7,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/animations.css">
+    <link rel="stylesheet" href="./assets/css/mediaqueries.css">
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +15,10 @@
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="./imgs/logos/icono-copa-indumentaria.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/imgs/logos/icono-copa-indumentaria.png" type="image/x-icon">
+    <!-- SLIDE SPLIDE JS -->
+    <link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <title>Copa Indumentaria</title>
 </head>
 <body>
@@ -24,6 +28,10 @@
             <span class="header-top-text">3 pagos con Tarjetas de Bancos Nacionales / 2 ,3 Y 4 cuotas con DEBITO /   Envios Sin Cargo para Compras +$25000</span>
         </div>
         <nav class="navbar">
+            <label for="menu-toggle" class="menu-label">
+                <i class="fa-sharp fa-solid fa-bars menu-icon"></i>
+            </label>
+            <input type="checkbox" id="menu-toggle" /> 
             <img src="./assets/imgs/logos/logo-copa-white.png" class="navbar-img" alt="">
             <ul class="navbar-list">
                 <li class="navbar-list-item"><a href="" class="navbar-list-link active">inicio</a></li>
@@ -33,14 +41,32 @@
                 <li class="navbar-list-item"><a href="" class="navbar-list-link">contacto</a></li>
             </ul>
             <div class="navbar-icons">
-                <i class="fa-solid fa-bag-shopping cart-icon"></i>
+                <label for="cart-toggle" class="cart-label">
+                    <i class="fa-solid fa-bag-shopping cart-icon navbar-icon"></i>
+                    <span id="cart-count">0</span>
+                </label>
             </div>
+            <input type="checkbox" id="cart-toggle" />
         </nav>
     </header>
 
     <!-- HERO -->
     <section id="hero">
-        <img class="hero-img" src="./assets/imgs/model/hero-info.jpg" alt="">
+        <div class="splide splide-hero">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img class="hero-img" src="./assets/imgs/model/iPhone_14_Pro_Max_74_4aebcf0a-5f7f-450a-b2b1-15d3a6fef87c_1440x.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img class="hero-img" src="./assets/imgs/model/iPhone_14_Pro_Max_62_b470ee22-d563-42ba-87ab-3c996e29a679_1440x.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img class="hero-img" src="./assets/imgs/iPhone_14_Pro_Max_96_aa2e755e-4c56-48e0-b59a-f7bbf013d12c_1920x.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>                        
     </section>
 
     <!-- BENEFICIOS -->
@@ -75,6 +101,7 @@
             <span class="title-line"></span>
         </div>
         <div class="products-container">
+            
             <div class="product">
                 <div class="product-img">
                     <img class="img" src="./assets/imgs/products/1.jpg" alt="">
@@ -257,116 +284,159 @@
             <span class="title-line"></span>
         </div>
         <div class="products-container">
-            <div class="product">
-                <div class="product-img">
-                    <img class="img" src="./assets/imgs/products/1.jpg" alt="">
-                    <span class="product-sale">sale</span>
+            <div class="splide splide-offers">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img class="img" src="./assets/imgs/products/1.jpg" alt="">
+                                    <span class="product-sale">sale</span>
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-info-text">
+                                        <span class="product-name">Remera “Copa” - Ronaldo Nazario</span>
+                                        <div class="product-offer">
+                                            <span class="product-price">$39.990</span>
+                                            <span class="offer">$39.990</span>
+                                        </div>
+                                        <div class="product-pay">
+                                            <i class="fa-regular fa-credit-card product-pay-icon"></i>
+                                            <span class="product-pay-text">6 cuotas sin interés</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-buttons">
+                                        <a href="#" class="button-buy button">comprar</a>
+                                        <a href="#" class="button-view button"><i class="fa-regular fa-eye eye-icon "></i>ver</a> 
+                                    </div>   
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img class="img" src="./assets/imgs/products/1.jpg" alt="">
+                                    <span class="product-sale">sale</span>
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-info-text">
+                                        <span class="product-name">Remera “Copa” - Ronaldo Nazario</span>
+                                        <div class="product-offer">
+                                            <span class="product-price">$39.990</span>
+                                            <span class="offer">$39.990</span>
+                                        </div>
+                                        <div class="product-pay">
+                                            <i class="fa-regular fa-credit-card product-pay-icon"></i>
+                                            <span class="product-pay-text">6 cuotas sin interés</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-buttons">
+                                        <a href="#" class="button-buy button">comprar</a>
+                                        <a href="#" class="button-view button"><i class="fa-regular fa-eye eye-icon "></i>ver</a> 
+                                    </div>   
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img class="img" src="./assets/imgs/products/1.jpg" alt="">
+                                    <span class="product-sale">sale</span>
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-info-text">
+                                        <span class="product-name">Remera “Copa” - Ronaldo Nazario</span>
+                                        <div class="product-offer">
+                                            <span class="product-price">$39.990</span>
+                                            <span class="offer">$39.990</span>
+                                        </div>
+                                        <div class="product-pay">
+                                            <i class="fa-regular fa-credit-card product-pay-icon"></i>
+                                            <span class="product-pay-text">6 cuotas sin interés</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-buttons">
+                                        <a href="#" class="button-buy button">comprar</a>
+                                        <a href="#" class="button-view button"><i class="fa-regular fa-eye eye-icon "></i>ver</a> 
+                                    </div>   
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img class="img" src="./assets/imgs/products/1.jpg" alt="">
+                                    <span class="product-sale">sale</span>
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-info-text">
+                                        <span class="product-name">Remera “Copa” - Ronaldo Nazario</span>
+                                        <div class="product-offer">
+                                            <span class="product-price">$39.990</span>
+                                            <span class="offer">$39.990</span>
+                                        </div>
+                                        <div class="product-pay">
+                                            <i class="fa-regular fa-credit-card product-pay-icon"></i>
+                                            <span class="product-pay-text">6 cuotas sin interés</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-buttons">
+                                        <a href="#" class="button-buy button">comprar</a>
+                                        <a href="#" class="button-view button"><i class="fa-regular fa-eye eye-icon "></i>ver</a> 
+                                    </div>   
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img class="img" src="./assets/imgs/products/1.jpg" alt="">
+                                    <span class="product-sale">sale</span>
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-info-text">
+                                        <span class="product-name">Remera “Copa” - Ronaldo Nazario</span>
+                                        <div class="product-offer">
+                                            <span class="product-price">$39.990</span>
+                                            <span class="offer">$39.990</span>
+                                        </div>
+                                        <div class="product-pay">
+                                            <i class="fa-regular fa-credit-card product-pay-icon"></i>
+                                            <span class="product-pay-text">6 cuotas sin interés</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-buttons">
+                                        <a href="#" class="button-buy button">comprar</a>
+                                        <a href="#" class="button-view button"><i class="fa-regular fa-eye eye-icon "></i>ver</a> 
+                                    </div>   
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="product-info">
-                    <div class="product-info-text">
-                        <span class="product-name">Remera “Copa” - Ronaldo Nazario</span>
-                        <div class="product-offer">
-                            <span class="product-price">$39.990</span>
-                            <span class="offer">$39.990</span>
-                        </div>
-                        
-                        <div class="product-pay">
-                        <i class="fa-regular fa-credit-card product-pay-icon"></i>
-                        <span class="product-pay-text">6 cuotas sin interés</span>
-                    </div>
-                    </div>
-                    <div class="product-buttons">
-                        <a href="#" class="button-buy button">comprar</a>
-                        <a href="#" class="button-view button"><i class="fa-regular fa-eye eye-icon "></i>ver</a> 
-                    </div>   
-                </div>
-
-                
             </div>
-            <div class="product">
-                <div class="product-img">
-                    <img class="img" src="./assets/imgs/products/1.jpg" alt="">
-                    <span class="product-sale">sale</span>
-                </div>
-                <div class="product-info">
-                    <div class="product-info-text">
-                        <span class="product-name">Remera “Copa” - Ronaldo Nazario</span>
-                        <div class="product-offer">
-                            <span class="product-price">$39.990</span>
-                            <span class="offer">$39.990</span>
-                        </div>
-                        
-                        <div class="product-pay">
-                        <i class="fa-regular fa-credit-card product-pay-icon"></i>
-                        <span class="product-pay-text">6 cuotas sin interés</span>
-                    </div>
-                    </div>
-                    <div class="product-buttons">
-                        <a href="#" class="button-buy button">comprar</a>
-                        <a href="#" class="button-view button"><i class="fa-regular fa-eye eye-icon "></i>ver</a> 
-                    </div>   
-                </div>
-
-                
-            </div>
-            <div class="product">
-                <div class="product-img">
-                    <img class="img" src="./assets/imgs/products/1.jpg" alt="">
-                    <span class="product-sale">sale</span>
-                </div>
-                <div class="product-info">
-                    <div class="product-info-text">
-                        <span class="product-name">Remera “Copa” - Ronaldo Nazario</span>
-                        <div class="product-offer">
-                            <span class="product-price">$39.990</span>
-                            <span class="offer">$39.990</span>
-                        </div>
-                        
-                        <div class="product-pay">
-                        <i class="fa-regular fa-credit-card product-pay-icon"></i>
-                        <span class="product-pay-text">6 cuotas sin interés</span>
-                    </div>
-                    </div>
-                    <div class="product-buttons">
-                        <a href="#" class="button-buy button">comprar</a>
-                        <a href="#" class="button-view button"><i class="fa-regular fa-eye eye-icon "></i>ver</a> 
-                    </div>   
-                </div>
-
-                
-            </div>
-            <div class="product">
-                <div class="product-img">
-                    <img class="img" src="./assets/imgs/products/1.jpg" alt="">
-                    <span class="product-sale">sale</span>
-                </div>
-                <div class="product-info">
-                    <div class="product-info-text">
-                        <span class="product-name">Remera “Copa” - Ronaldo Nazario</span>
-                        <div class="product-offer">
-                            <span class="product-price">$39.990</span>
-                            <span class="offer">$39.990</span>
-                        </div>
-                        
-                        <div class="product-pay">
-                        <i class="fa-regular fa-credit-card product-pay-icon"></i>
-                        <span class="product-pay-text">6 cuotas sin interés</span>
-                    </div>
-                    </div>
-                    <div class="product-buttons">
-                        <a href="#" class="button-buy button">comprar</a>
-                        <a href="#" class="button-view button"><i class="fa-regular fa-eye eye-icon "></i>ver</a> 
-                    </div>   
-                </div>
-            </div>        
-
-        </div><button class="button button-view-products">ver mas</button>
+        </div>
+        <button class="button button-view-products">ver mas</button>
     </section>
 
     <!-- LOCAL -->
 
     <section id="local-location">
-        <img class="local-img" src="./assets/imgs/iPhone_14_Pro_Max_96_aa2e755e-4c56-48e0-b59a-f7bbf013d12c_1920x.jpg" alt="">
+        <div class="splide splide-location">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img class="local-img" src="./assets/imgs/model/iPhone_14_Pro_Max_74_4aebcf0a-5f7f-450a-b2b1-15d3a6fef87c_1440x.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img class="local-img" src="./assets/imgs/model/iPhone_14_Pro_Max_62_b470ee22-d563-42ba-87ab-3c996e29a679_1440x.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img class="local-img" src="./assets/imgs/iPhone_14_Pro_Max_96_aa2e755e-4c56-48e0-b59a-f7bbf013d12c_1920x.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div> 
         <div class="local-info">
             <span class="local-title">¡visitá nuestro local!</span>
             <div class="local-text">
@@ -460,13 +530,13 @@
             <div class="footer-social">
                 <span class="footer-title">encontranos en</span>
                 <div class="social-icons">
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/copa.oficial/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/copa.oficial1" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <span class="bottom-text">© COPA INDUMENTARIA</span>
+            <span class="bottom-text">2022 © COPA INDUMENTARIA | Design By</span>
         </div>
     </footer>
 
@@ -479,10 +549,13 @@
 
 
 
-
+<!-- SPLIDE JS -->
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
     
-
+    <script src="./assets/js/main.js"></script>
     
-    <script src="./js/main.js"></script>
+    
 </body>
 </html>

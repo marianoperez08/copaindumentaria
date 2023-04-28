@@ -1,0 +1,194 @@
+@media (max-width: 992px) {
+
+    h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    /* Header */
+
+    .navbar {
+        padding: 0 30px;
+    }
+
+    .header-menu {
+        gap: 30px;
+    }
+
+    .menu-label {
+        display: flex;
+        font-size: 25px;
+    }
+
+    .navbar {
+        gap: 30px;
+    }
+
+    .navbar-list {
+        position: absolute;
+        top: 120px;
+        left: 0;
+        background: var(--blue);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 30px;
+        padding: 100px 100px 0 100px;
+        height: calc(100vh - 120px);
+        z-index: 99;
+        transform: translate(-200%);
+        transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+        display: none;
+    }
+    
+    #menu-toggle:checked ~ .navbar-list {
+        display: flex;
+        transform: translate(0%);
+        transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+    }
+
+    #menu-toggle:checked ~ .navbar-list {
+        display: flex;
+        transform: translate(0%);
+        transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+    }
+
+    /* SECTION PRODUCT */
+
+    #products {
+        padding: 50px 0;
+    }
+
+    .products-container {
+        row-gap: 60px;
+        column-gap: 15px;
+    }
+
+    .product {
+        width: 30%;
+    }
+
+    /* CATEGORY */
+
+    #categories {
+        gap: 15px;
+        padding: 50px 30px;
+    }
+
+    /* CLIENTS */
+
+    .client-info {
+        width: 30%;
+    }
+
+    /* FOOTER */
+
+    .footer-top {
+        padding: 30px;
+    }
+
+    .footer-logo {
+        width: 100px;
+    }
+
+    .footer-title {
+        font-size: 15px;
+    }
+
+    .menu-list,
+    .contact-icons
+    {
+        font-size: 14px;
+    }
+
+    .social-icons i {
+        font-size: 20px;
+    }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+
+ /* BENEFICIOS */
+
+ #benefits {
+    flex-direction: column;
+    padding: 40px 0;
+    gap: 60px;
+ }
+
+ .benefit {
+    width: 100%;
+ }
+
+ /* PRODUCTOS */
+
+ .products-container {
+    row-gap: 20px;
+ }
+
+ .product {
+    width: 40%;
+ }
+
+ .product-img {
+    height: 250px;
+ }
+
+ .product-buttons {
+    gap: 10px;
+ }
+
+ .product-buttons .button{
+    font-size: 10px;
+ }
+
+ /* CATEGORY */
+
+ #categories {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    gap: 0;
+ }
+
+ .category {
+    width: 100%;
+ }
+
+ /* LOCAL */
+
+#local-location {
+    align-content: center;
+}
+ 
+.local-info {
+    bottom: 70px;
+    width: 80%;
+}
+
+.local-text {
+    font-size: 10px;
+}
+
+.title-text {
+    text-align: center;
+}
+
+.clients-imgs {
+    flex-direction: column;
+}
+
+.client-info {
+    width: 100%;
+}
+
+.footer-top {
+    flex-direction: column;
+    gap: 40px;
+}
+
+}
+
