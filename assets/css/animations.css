@@ -1,14 +1,159 @@
-.product:hover > .product-info > .product-buttons {
-    visibility: visible;
-    transition: all 400ms ease-out;
+/* KEYFRAMES */
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-.product:hover::before{
+@keyframes slide-up {
+    from {
+        transform: translateY(100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(200%);
+    }
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(200%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+
+.product:hover > .product-info > .product-buttons {
+    visibility: visible;
+}
+
+.product:hover > .product-img > .img {
+    display: none;
+}
+
+.product:hover > .product-img > .product-img-hover {
+    display: flex;
+}
+
+/* .product:hover::before{
     content: '';
     position: absolute;
     left: 0;
     width: 99%;
     height: 100%;
     border: 0.1px solid #b2b2b2;
+} */
+
+/* Hover de los elementos "a" del navbar */
+
+.navbar-list-item{
+    position: relative;
+    padding: 4px;
+}
+
+.navbar-list-link::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: var(--white);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.15s ease;
+}
+
+.active::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: var(--white);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(1);
+    transform-origin: bottom right;
+    transition: transform 0.15s ease;
+}
+
+.navbar-list li a:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+
+/* BUTTON */
+
+.button-buy:hover {
+    background-color: var(--red);
+    border: 1px solid var(--red);
+}
+
+.button:hover {
+    background-color: var(--red);
+    border: 1px solid var(--red);
+    color: var(--white);
+    transition: all 500ms ease;
+}
+
+/* CATEGORY */
+
+.category {
+    width: 100%;
+}
+
+.category:hover {
+    width: 130%;
+    cursor: pointer;
+}
+
+/* CORDITA */
+
+.client-info:hover > .client-hover {
+    display: flex;
+    animation: fade .3s ease-in, slide-up .3s ease-in-out;
+}
+
+.client-info:hover::before {
+    display: flex;
+    cursor: pointer;
+    animation: fade .3s ease-in;
+}
+
+/* REDES */
+
+.social-icons a i:hover {
+    color: var(--blue);
+    transition: all .5s ease;
+}
+
+.menu-list li a:hover  {
+    color: var(--blue);
+    transition: all .2s ease;
+    font-weight: 500;
 }
 
