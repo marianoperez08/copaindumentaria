@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="./assets/css/mediaqueries.css">
     <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,24 +22,60 @@
     <!-- SLIDE SPLIDE JS -->
     <link href="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
-    <title>Copa Indumentaria</title>
+    <title>Copa Oficial</title>
 </head>
 <body>
     <!-- HEADER -->
     <header id="header">
-        <div class="header-top">
-            <span class="header-top-text">3 pagos con Tarjetas de Bancos Nacionales / 2 ,3 Y 4 cuotas con DEBITO /   Envios Sin Cargo para Compras +$25000</span>
-        </div>
         <nav class="navbar">
+            <!-- MENU RESPONSIVE -->
             <label for="menu-toggle" class="menu-label">
                 <i class="fa-sharp fa-solid fa-bars menu-icon"></i>
             </label>
             <input type="checkbox" id="menu-toggle" /> 
+            <!-- LOGO -->
             <img src="./assets/imgs/logos/logo-copa-white.png" class="navbar-img" alt="">
             <ul class="navbar-list">
                 <li class="navbar-list-item"><a href="" class="navbar-list-link active">inicio</a></li>
-                <li class="navbar-list-item"><a href="" class="navbar-list-link">nuevo</a></li>
-                <li class="navbar-list-item"><a href="" class="navbar-list-link">productos</a></li>
+                <li class="navbar-list-item"><a href="#offers" class="navbar-list-link">nuevo</a></li>
+                <li class="navbar-list-item item-products">
+
+                    <a href="" class="navbar-list-link ">productos<i class="fa-solid fa-angle-down"></i></a> 
+                    <div class="dropdown-menu" id="dropdown-menu">
+                        <ul>
+                            <li><a href="">remeras</a></li>
+                            <li><a href="">necesers</a></li>
+                            <li><a href="">mochilas</a></li>
+                            <li>
+                                
+                                <a href="">medias <i class="fas fa-solid fa-angle-right"></i></a>
+                                <div class="dropdown-menu-1 dropdown-menus">
+                                    <ul>
+                                        <li><a href="">vendaje cohesivo</a></li>
+                                        <li><a href="">pantorrilleras</a></li>
+                                        <li><a href="">antideslizantes</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="">mate<i class="fas fa-solid fa-angle-right"></i></a>
+                                <div class="dropdown-menu-2 dropdown-menus ">
+                                    <ul>
+                                        <li><a href="">mochilas</a></li>
+                                        <li><a href="">materas</a></li>
+                                        <li><a href="">yerberas</a></li>
+                                        <li><a href="">mates</a></li>
+                                        <li><a href="">termos</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="">billeteras</a></li>
+                            <li><a href="">gorras</a></li>
+                            <li><a href="">calzado</a></li>
+                            <li><a href="">bolsos</a></li>
+                            <li><a href="">morrales</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li class="navbar-list-item"><a href="" class="navbar-list-link">descuentos</a></li>
                 <li class="navbar-list-item"><a href="" class="navbar-list-link">contacto</a></li>
             </ul>
@@ -78,22 +113,22 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel
         <div class="benefit">
             <i class="fa-solid fa-truck-fast benefit-icon"></i>
             <div class="benefit-text">
-                <span class="benefit-title">envío rapido</span>
-                <span class="benefit-description">En compras superiores a $40.000</span>
+                <span class="benefit-title">envíamos tu compra</span>
+                <span class="benefit-description">Entregas a todo el pais</span>
             </div>
         </div>
         <div class="benefit">
             <i class="fa-regular fa-credit-card benefit-icon"></i>
             <div class="benefit-text">
-                <span class="benefit-title">3 y 6 cuotas sin interés</span>
-                <span class="benefit-description">Con tarjetas de crédito bancarias.</span>
+                <span class="benefit-title">pagá como quieras</span>
+                <span class="benefit-description">Tarjetas de crédito o efectivo.</span>
             </div>
         </div>
         <div class="benefit">
             <i class="fa-solid fa-lock benefit-icon"></i>
             <div class="benefit-text">
                 <span class="benefit-title">comprá de manera segura</span>
-                <span class="benefit-description">En compras superiores a $40.000</span>
+                <span class="benefit-description">Tus datos siempre protegidos</span>
             </div>
         </div>
     </section>
@@ -106,7 +141,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel
         </div>
         <div class="products-container">
             
-            <div class="product">
+            <!-- <div class="product">
                 <div class="product-img">
                     <img class="img" src="./assets/imgs/products/1.jpg" alt="">
                     <img class="img product-img-hover" src="./assets/imgs/products/4.jpg" alt="">
@@ -261,7 +296,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel
                         <a href="#" class="button-view button"><i class="fa-regular fa-eye eye-icon "></i>ver</a> 
                     </div>   
                 </div>
-            </div>
+            </div> -->
         </div>
         <button class="button button-view-products">ver mas</button>
     </section>

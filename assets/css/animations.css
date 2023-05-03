@@ -81,7 +81,7 @@
     width: 100%;
     background: var(--white);
     position: absolute;
-    bottom: 0;
+    bottom: 25px;
     left: 0;
     transform: scaleX(0);
     transform-origin: bottom right;
@@ -94,7 +94,7 @@
     width: 100%;
     background: var(--white);
     position: absolute;
-    bottom: 0;
+    bottom: 25px;
     left: 0;
     transform: scaleX(1);
     transform-origin: bottom right;
