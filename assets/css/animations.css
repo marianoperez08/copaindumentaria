@@ -45,7 +45,28 @@
     }
 }
 
+@keyframes mover {
+    0% { left: 0; }
+    100% { left: calc(100% - 100px); }
+  }
 
+@keyframes scroll {
+    0% {
+      transform: translateX(1000px);
+    }
+    100% {
+      transform: translateX(calc(-100%));
+    }
+}
+
+.navbar-top {
+    display: flex;
+}
+
+.navbar-top-text {
+    animation: scroll 5s linear infinite;
+    -webkit-animation: scroll 5s linear infinite;
+}
 
 .product:hover > .product-info > .product-buttons {
     visibility: visible;
@@ -78,11 +99,15 @@
 .navbar-list-link::after {
     content: "";
     height: 1px;
-    width: 100%;
+    width: 50%;
     background: var(--white);
     position: absolute;
     bottom: 25px;
-    left: 0;
+    margin-left:auto;
+    margin-right:auto;
+    left:0;
+    right:0;
+    translate: -50%, -50%;
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.15s ease;
@@ -91,11 +116,14 @@
 .active::after {
     content: "";
     height: 1px;
-    width: 100%;
+    width: 50%;
     background: var(--white);
     position: absolute;
     bottom: 25px;
-    left: 0;
+    margin-left:auto;
+    margin-right:auto;
+    left:0;
+    right:0;
     transform: scaleX(1);
     transform-origin: bottom right;
     transition: transform 0.15s ease;

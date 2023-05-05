@@ -1,10 +1,18 @@
 let stockProductos = [
-    {
-        // Remeras
+    // REMERAS
+    
+    /* remera-01 */ {   
         id: "remera-01",
         nombre: "Remera - 'Fenómeno'",
-        img: "remera-ronaldo.jpg",
-        img2: "remera-ronaldo-2.jpg",
+        descripcion: "Casaca de un besito de R9 a la caprichosa, su mejor amiga.",
+        img: "/remeras/remera-ronaldo.jpg",
+        img2: "/remeras/remera-ronaldo-2.jpg",
+        talles: {
+            xl: true,
+            l: true,
+            m: true,
+            s: true,
+        },
         colores: {
             gris: true,
             blanco: false,
@@ -18,15 +26,22 @@ let stockProductos = [
             id: "remera"
         },
         precio: 7500,
-        oferta: true,
+        oferta: false,
         destacado: true,
         cantidad: 1
     },
-    {
+    /* remera-02 */ {
         id: "remera-02",
         nombre: "Remera - 'Messías'",
-        img: "remera-messias.jpg",
-        img2: "remera-messias-2.jpg",
+        descripcion: "Remera que inmortaliza el icónico festejo de Lionel en el patio de su casa, el Bernabeu.",
+        img: "/remeras/remera-messias.jpg",
+        img2: "/remeras/remera-messias-2.jpg",
+        talles: {
+            xl: true,
+            l: true,
+            m: false,
+            s: false,
+        },
         colores: {
             gris: true,
             blanco: false,
@@ -40,15 +55,22 @@ let stockProductos = [
             id: "remera"
         },
         precio: 7500,
-        oferta: true,
+        oferta: false,
         destacado: true,
         cantidad: 1
     },
-    {
+    /* remera-03 */ {
         id: "remera-03",
-        nombre: "Remera - 'Diego ''82'",
-        img: "remera-diego82.jpg",
-        img2: "remera-diego82-2.jpg",
+        nombre: "Remera - 'Diego '82'",
+        descripcion: "El primer Mundial de Diego. Su primera experiencia antes de la epopeya en México.",
+        img: "/remeras/remera-diego82.jpg",
+        img2: "/remeras/remera-diego82-2.jpg",
+        talles: {
+            xl: true,
+            l: true,
+            m: false,
+            s: false,
+        },
         colores: {
             gris: false,
             blanco: true,
@@ -62,15 +84,22 @@ let stockProductos = [
             id: "remera"
         },
         precio: 7500,
-        oferta: true,
+        oferta: false,
         destacado: true,
         cantidad: 1
     },
-    {
+    /* remera-04 */ {
         id: "remera-04",
         nombre: "Remera - 'Johan, el Creador'",
-        img: "remera-johan.jpg",
-        img2: "remera-johan-2.jpg",
+        descripcion: "Remera dedicada a uno de los grandes artífices de este deporte. Indiscutible como jugador y como DT.",
+        img: "/remeras/remera-johan.jpg",
+        img2: "/remeras/remera-johan-2.jpg",
+        talles: {
+            xl: true,
+            l: false,
+            m: true,
+            s: true,
+        },
         colores: {
             gris: true,
             blanco: true,
@@ -84,13 +113,14 @@ let stockProductos = [
             id: "remera"
         },
         precio: 7500,
-        oferta: true,
+        oferta: false,
         destacado: true,
         cantidad: 1
     },
-    {
-        //NECESER
 
+    // NECESERES
+
+    /* neceser-01 */ {
         id: "neceser-01",
         nombre: "neceser forza",
         img: "neceser-forza.jpg",
@@ -112,7 +142,7 @@ let stockProductos = [
         destacado: false,
         cantidad: 1
     },
-    {
+    /* neceser-02 */ {
         id: "neceser-02",
         nombre: "neceser butto liso",
         img: "neceser-butto-liso.jpg",
@@ -134,7 +164,7 @@ let stockProductos = [
         destacado: false,
         cantidad: 1
     },
-    {
+    /* neceser-03 */ {
         id: "neceser-03",
         nombre: "neceser butto futbol",
         img: "neceser-butto-futbol.jpg",
@@ -156,7 +186,7 @@ let stockProductos = [
         destacado: false,
         cantidad: 1
     },
-    {
+    /* neceser-04 */ {
         id: "neceser-04",
         nombre: "neceser kubo zr",
         img: "neceser-kubo-zr.jpg",
@@ -178,7 +208,7 @@ let stockProductos = [
         destacado: false,
         cantidad: 1
     },
-    {
+    /* neceser-05 */ {
         id: "neceser-05",
         nombre: "neceser drigo liso",
         img: "neceser-drigo-liso.jpg",
@@ -200,7 +230,7 @@ let stockProductos = [
         destacado: false,
         cantidad: 1
     },
-    {
+    /* neceser-06 */ {
         id: "neceser-06",
         nombre: "neceser tachas",
         img: "neceser-tachas",
@@ -222,7 +252,7 @@ let stockProductos = [
         destacado: false,
         cantidad: 1
     },
-    {
+    /* neceser-07 */ {
         id: "neceser-07",
         nombre: "neceser platinum",
         img: "neceser-platinum.jpg",
@@ -244,7 +274,7 @@ let stockProductos = [
         destacado: false,
         cantidad: 1
     },
-    {
+    /* neceser-08 */ {
         id: "neceser-08",
         nombre: "neceser metal",
         img: "necesar-metal.jpg",
@@ -266,11 +296,11 @@ let stockProductos = [
         destacado: false,
         cantidad: 1
     },
-    {
+    /* neceser-09 */ {
         id: "neceser-09",
         nombre: "neceser gajos",
-        img: "neceser-gajos.jpg",
-        img2: "neceser-gajos-2.jpg",
+        img: "neceseres/neceser-gajos.jpg",
+        img2: "neceseres/neceser-gajos-2.jpg",
         colores: {
             gris: false,
             blanco: true,
@@ -289,10 +319,10 @@ let stockProductos = [
         destacado: true,
         cantidad: 1
     },
-    {
+    /* neceser-10 */ {
         id: "neceser-10",
         nombre: "neceser kubo",
-        img: "neceser-kubo.jpg",
+        img: "neceseres/neceser-kubo.jpg",
         colores: {
             marron: true,
             gris: false,
@@ -312,10 +342,10 @@ let stockProductos = [
         destacado: false,
         cantidad: 1
     },
-    {
+    /* neceser-11 */ {
         id: "neceser-11",
         nombre: "neceser zr",
-        img: "neceser-zr.jpg",
+        img: "neceseres/neceser-zr.jpg",
         colores: {
             gris: false,
             blanco: false,
@@ -334,10 +364,10 @@ let stockProductos = [
         destacado: false,
         cantidad: 1
     },
-    {
+    /* neceser-12 */ {
         id: "neceser-12",
         nombre: "neceser black",
-        img: "neceser-black.jpg",
+        img: "neceseres/neceser-black.jpg",
         colores: {
             gris: false,
             blanco: false,
@@ -356,11 +386,13 @@ let stockProductos = [
         destacado: false,
         cantidad: 1
     },
-    // Mochila
-    {
+
+    // MOCHILAS
+
+    /* mochila-01 */ {
         id: "mochila-01",
         nombre: "bolso cilindro",
-        img: "bolso-cilindro.jpg",
+        img: "mochilas/bolso-cilindro.jpg",
         colores: {
             gris: false,
             blanco: false,
@@ -379,10 +411,10 @@ let stockProductos = [
         destacado: false,
         cantidad: 1
     },
-    {
+    /* mochila-02 */{
         id: "mochila-02",
         nombre: "mochila kubo",
-        img: "mochila-kubo.jpg",
+        img: "mochilas/mochila-kubo.jpg",
         colores: {
             gris: false,
             blanco: false,
@@ -401,11 +433,11 @@ let stockProductos = [
         destacado: false,
         cantidad: 1
     },
-    {
+    /* mochila-03 */{
         id: "mochila-03",
         nombre: "mochila line",
-        img: "mochila-line.jpg",
-        img2: "mochila-line-2.jpg",
+        img: "mochilas/mochila-line.jpg",
+        img2: "mochilas/mochila-line-2.jpg",
         colores: {
             gris: false,
             blanco: false,
@@ -420,11 +452,11 @@ let stockProductos = [
             id: "mochila"
         },
         precio: 15500,
-        oferta: true,
+        oferta: false,
         destacado: true,
         cantidad: 1
     },
-    {
+    /* mochila-04 */{
         id: "mochila-04",
         nombre: "mochila xl",
         img: "mochila-xl.jpg",
@@ -446,12 +478,14 @@ let stockProductos = [
         destacado: false,
         cantidad: 1
     },
-    // Medias
-    {
-        id: "medias-01",
+
+    // MEDIAS
+    
+    /* media-01 */ {
+        id: "media-01",
         nombre: "medias antideslizantes (calcio)",
-        img: "medias-antideslizantes.jpg",
-        img2: "medias-antideslizantes-2.jpg",
+        img: "medias/medias-antideslizantes.jpg",
+        img2: "medias/medias-antideslizantes-2.jpg",
         colores: {
             blanco: true,
             celeste: true,
@@ -468,8 +502,8 @@ let stockProductos = [
         destacado: true,
         cantidad: 1
     },
-    {
-        id: "medias-02",
+    /* media-02 */ {
+        id: "media-02",
         nombre: "medias pantorilleras",
         img: "medias-pantorrilleras.jpg",
         colores: {
@@ -488,8 +522,8 @@ let stockProductos = [
         destacado: false,
         cantidad: 1
     },
-    {
-        id: "medias-03",
+    /* media-03 */ {
+        id: "media-03",
         nombre: "cinta cohesiva",
         img: "cinta-cohesiva.jpg",
         colores: {
@@ -508,8 +542,8 @@ let stockProductos = [
         destacado: false,
         cantidad: 1
     },
-    {
-        id: "medias-04",
+    /* media-04 */ {
+        id: "media-04",
         nombre: "combo antideslizante + pantorillera + cinta",
         img: "combo-mediasx3.jpg",
         colores: {
@@ -528,8 +562,10 @@ let stockProductos = [
         destacado: false,
         cantidad: 1
     },
-    //Billeteras
-    {
+
+    // BILLETERAS
+    
+    /* billetera-01 */ {
         id: "billetera-01",
         nombre: "billetera gajos",
         img: "billetera-gajos.jpg",
@@ -542,7 +578,7 @@ let stockProductos = [
         destacado: false,
         cantidad: 1
     },
-    {
+    /* billetera-02 */ {
         id: "billetera-02",
         nombre: "billetera black",
         img: "billetera-black.jpg",
@@ -555,8 +591,10 @@ let stockProductos = [
         destacado: false,
         cantidad: 1
     },
-    // Mate
-    {
+
+    // MATE
+
+    /* mate-01 */ {
         id: "mate-01",
         nombre: "matera gajos negra",
         img: "matera-gajos-black.jpg",
@@ -569,7 +607,7 @@ let stockProductos = [
         destacado: false,
         cantidad: 1
     },
-    {
+    /* mate-02 */ {
         id: "mate-01",
         nombre: "matera gajos negra",
         img: "matera-gajos-black.jpg",
@@ -582,7 +620,7 @@ let stockProductos = [
         destacado: false,
         cantidad: 1
     },
-    {
+    /* mate-03 */ {
         id: "mate-02",
         nombre: "matera cilindrada",
         img: "matera-cilindrada.jpg",
@@ -595,7 +633,7 @@ let stockProductos = [
         destacado: false,
         cantidad: 1
     },
-    {
+    /* mate-04 */ {
         id: "mate-03",
         nombre: "canasta matera",
         img: "canasta-matera-futbol.jpg",
@@ -608,8 +646,10 @@ let stockProductos = [
         destacado: false,
         cantidad: 1
     },
+
     // BOTINEROS
-    {
+
+    /* botinero-01 */ {
         id: "botinero-01",
         nombre: "botinero gajos",
         img: "botineros-gajos.jpg",
@@ -626,7 +666,7 @@ let stockProductos = [
         destacado: false,
         cantidad: 1
     },
-    {
+    /* botinero-02 */ {
         id: "botinero-02",
         nombre: "botinero butto",
         img: "botineros-butto.jpg",
@@ -643,11 +683,11 @@ let stockProductos = [
         destacado: false,
         cantidad: 1
     },
-    {
+    /* botinero-03 */ {
         id: "morral-01",
         nombre: "mini morral",
-        img: "mini-morral.jpg",
-        img2: "mini-morral-2.jpg",
+        img: "morrales/mini-morral.jpg",
+        img2: "morrales/mini-morral-2.jpg",
         colores: {
             negro: true,
             blanco: true
@@ -661,7 +701,7 @@ let stockProductos = [
         destacado: true,
         cantidad: 1
     },
-    {
+    /* botinero-04 */ {
         id: "morral-02",
         nombre: "morralsin",
         img: "morralsin.jpg",
@@ -678,7 +718,7 @@ let stockProductos = [
         destacado: false,
         cantidad: 1
     },
-    {
+    /* botinero-05 */ {
         id: "morral-03",
         nombre: "riñora copa",
         img: "riñonera-copa.jpg",
@@ -708,7 +748,6 @@ window.addEventListener("scroll", function() {
     let scrollPos = window.scrollY
 
     if (scrollPos > 1) {
-        navbar.style.position = "fixed"
         navbar.style.backgroundColor = "var(--blue)"
         dropDown.style.backgroundColor = "var(--blue)"
         dropDownMenu1.style.backgroundColor = "var(--blue)"
@@ -736,9 +775,72 @@ window.addEventListener("scroll", function() {
     }
 });  
 
+
+// Añadir productos al home
+const containerProductsFeatured = document.querySelector('#products-container-featured')
+const containerProductsOffers = document.querySelector('#products-container-offers')
+stockProductos.forEach((producto) => {
+    const {id, nombre, img, img2, precio, destacado, talles, oferta} = producto
+    if (destacado) {
+        containerProductsFeatured.innerHTML +=
+        `<div class="product" id="${id}">
+        <div class="product-img">
+            <img class="img" src="./assets/imgs/products/${img}" alt="">
+            <img class="img product-img-hover" src="./assets/imgs/products/${img2}" alt="">
+        </div>
+        <div class="product-info">
+            <div class="product-info-text">
+                <span class="product-name">${nombre}</span>
+                <span class="product-price">$${precio},00</span>
+                <div class="product-pay">
+                <i class="fa-regular fa-credit-card product-pay-icon"></i>
+                <span class="product-pay-text">6 cuotas sin interés</span>
+            </div>
+            </div>
+            <div class="product-buttons">
+                <a href="#" class="button-buy button">comprar</a>
+                <a href="#" class="button-view button"><i class="fa-regular fa-eye eye-icon "></i>ver</a> 
+            </div>   
+        </div>
+    </div>
+        `
+    }
+    if (oferta == false) {
+        containerProductsOffers.innerHTML +=
+        `<li class="splide__slide">
+        <div class="product">
+            <div class="product-img">
+                <img class="img" src="./assets/imgs/products/${img}" alt="">
+                <img class="img product-img-hover" src="./assets/imgs/products/${img2}" alt="">
+                <span class="product-sale">sale</span>
+            </div>
+            <div class="product-info">
+                <div class="product-info-text">
+                    <span class="product-name">${nombre}</span>
+                    <div class="product-offer">
+                        <span class="product-price">$${precio - (precio * 10 / 100)}</span>
+                        <span class="offer">$${precio}</span>
+                    </div>
+                    <div class="product-pay">
+                        <i class="fa-regular fa-credit-card product-pay-icon"></i>
+                        <span class="product-pay-text">6 cuotas sin interés</span>
+                    </div>
+                </div>
+                <div class="product-buttons">
+                    <a href="#" class="button-buy button">comprar</a>
+                    <a href="#" class="button-view button"><i class="fa-regular fa-eye eye-icon "></i>ver</a> 
+                </div>   
+            </div>
+        </div>
+    </li>
+        `
+    }
+})
+
 // SPLIDE JS
 const splideOffers = new Splide( '.splide-offers', {
     perPage: '4',
+    type: "loop",
     perMove: '1',
     gap: '20px',
     breakpoints: {
@@ -783,33 +885,20 @@ splideLocation.mount();
 splideOffers.mount();
 
 
-// Añadir productos al home
-const containerProducts = document.querySelector('.products-container')
-stockProductos.forEach((producto) => {
-    const {id, nombre, img, img2, precio, destacado} = producto
-    if (destacado) {
-        containerProducts.innerHTML +=
-        `<div class="product" id="${id}">
-        <div class="product-img">
-            <img class="img" src="./assets/imgs/products/${img}" alt="">
-            <img class="img product-img-hover" src="./assets/imgs/products/${img2}" alt="">
-        </div>
-        <div class="product-info">
-            <div class="product-info-text">
-                <span class="product-name">${nombre}</span>
-                <span class="product-price">$${precio}</span>
-                <div class="product-pay">
-                <i class="fa-regular fa-credit-card product-pay-icon"></i>
-                <span class="product-pay-text">6 cuotas sin interés</span>
-            </div>
-            </div>
-            <div class="product-buttons">
-                <a href="#" class="button-buy button">comprar</a>
-                <a href="#" class="button-view button"><i class="fa-regular fa-eye eye-icon "></i>ver</a> 
-            </div>   
-        </div>
-    </div>
-        `
-    }
-    
-})
+let listElements = document.querySelectorAll('.list__button--click');
+
+listElements.forEach(listElement => {
+    listElement.addEventListener('click', ()=>{
+        
+        listElement.classList.toggle('arrow');
+
+        let height = 0;
+        let menu = listElement.nextElementSibling;
+        if(menu.clientHeight == "0"){
+            height=menu.scrollHeight;
+        }
+
+        menu.style.height = `${height}px`;
+
+    })
+});
