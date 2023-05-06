@@ -1,5 +1,14 @@
 @media (max-width: 1000px) {
 
+    .cart {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .local-description {
+        width: 160px;
+    }
+
     h1 {
         font-size: 40px;
         line-height: 40px;
@@ -97,9 +106,6 @@
     }
 
 }
-
-
-
 
 /* MOBILE */
 

@@ -48,37 +48,57 @@
 @keyframes mover {
     0% { left: 0; }
     100% { left: calc(100% - 100px); }
-  }
+}
 
 @keyframes scroll {
     0% {
-      transform: translateX(1000px);
+    transform: translateX(1000px);
     }
     100% {
-      transform: translateX(calc(-100%));
+    transform: translateX(calc(-100%));
     }
 }
 
-.product:hover > .product-info > .product-buttons {
-    visibility: visible;
+
+/* BUTTOM CART */
+.cart-btn-buy:hover {
+    background: transparent;
+    border: 1px solid var(--white);
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    font-weight: 700;
 }
 
-.product:hover > .product-img > .img {
-    display: none;
+/* VIEW MORE CART */
+.cart-view-more:hover {
+    color: rgb(191, 190, 190);
 }
 
-.product:hover > .product-img > .product-img-hover {
-    display: flex;
+/* SUMAR Y RESTAR CART */
+.quantity-handler:hover {
+    background: var(--red);
+    color: var(--white);
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    border: 1px solid var(--red);
+    cursor: pointer;
 }
 
-/* .product:hover::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 99%;
-    height: 100%;
-    border: 0.1px solid #b2b2b2;
-} */
+.item-trash:hover {
+    color: var(--blue);
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    cursor: pointer;
+}
 
 /* Hover de los elementos "a" del navbar */
 
@@ -137,6 +157,19 @@
     border: 1px solid var(--red);
     color: var(--white);
     transition: all 500ms ease;
+}
+
+/* CAMBIO IMAGENES PRODUCT */
+.product:hover > .product-info > .product-buttons {
+    visibility: visible;
+}
+
+.product:hover > .product-img > .img {
+    display: none;
+}
+
+.product:hover > .product-img > .product-img-hover {
+    display: flex;
 }
 
 /* CATEGORY */

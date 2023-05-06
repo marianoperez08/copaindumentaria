@@ -2,7 +2,7 @@ let stockProductos = [
     // REMERAS
     
     /* remera-01 */ {   
-        id: "remera-01",
+        id: 1,
         nombre: "Remera - 'Fenómeno'",
         descripcion: "Casaca de un besito de R9 a la caprichosa, su mejor amiga.",
         img: "/remeras/remera-ronaldo.jpg",
@@ -31,7 +31,7 @@ let stockProductos = [
         cantidad: 1
     },
     /* remera-02 */ {
-        id: "remera-02",
+        id: 2,
         nombre: "Remera - 'Messías'",
         descripcion: "Remera que inmortaliza el icónico festejo de Lionel en el patio de su casa, el Bernabeu.",
         img: "/remeras/remera-messias.jpg",
@@ -60,7 +60,7 @@ let stockProductos = [
         cantidad: 1
     },
     /* remera-03 */ {
-        id: "remera-03",
+        id: 3,
         nombre: "Remera - 'Diego '82'",
         descripcion: "El primer Mundial de Diego. Su primera experiencia antes de la epopeya en México.",
         img: "/remeras/remera-diego82.jpg",
@@ -89,7 +89,7 @@ let stockProductos = [
         cantidad: 1
     },
     /* remera-04 */ {
-        id: "remera-04",
+        id: 4,
         nombre: "Remera - 'Johan, el Creador'",
         descripcion: "Remera dedicada a uno de los grandes artífices de este deporte. Indiscutible como jugador y como DT.",
         img: "/remeras/remera-johan.jpg",
@@ -120,622 +120,623 @@ let stockProductos = [
 
     // NECESERES
 
-    /* neceser-01 */ {
-        id: "neceser-01",
-        nombre: "neceser forza",
-        img: "neceser-forza.jpg",
-        colores: {
-            gris: false,
-            blanco: true,
-            celeste: false,
-            negro: true,
-            rojo: false,
-            azul: false,
-            rosa: false
-        },
-        categoria: {
-            nombre: "necesers",
-            id: "neceser"
-        },
-        precio: 9999,
-        oferta: true,
-        destacado: false,
-        cantidad: 1
-    },
-    /* neceser-02 */ {
-        id: "neceser-02",
-        nombre: "neceser butto liso",
-        img: "neceser-butto-liso.jpg",
-        colores: {
-            gris: false,
-            blanco: false,
-            celeste: false,
-            negro: true,
-            rojo: false,
-            azul: false,
-            rosa: false
-        },
-        categoria: {
-            nombre: "necesers",
-            id: "neceser"
-        },
-        precio: 9999,
-        oferta: true,
-        destacado: false,
-        cantidad: 1
-    },
-    /* neceser-03 */ {
-        id: "neceser-03",
-        nombre: "neceser butto futbol",
-        img: "neceser-butto-futbol.jpg",
-        colores: {
-            gris: false,
-            blanco: false,
-            celeste: false,
-            negro: true,
-            rojo: false,
-            azul: false,
-            rosa: false
-        },
-        categoria: {
-            nombre: "necesers",
-            id: "neceser"
-        },
-        precio: 9999,
-        oferta: true,
-        destacado: false,
-        cantidad: 1
-    },
-    /* neceser-04 */ {
-        id: "neceser-04",
-        nombre: "neceser kubo zr",
-        img: "neceser-kubo-zr.jpg",
-        colores: {
-            gris: false,
-            blanco: false,
-            celeste: false,
-            negro: true,
-            rojo: false,
-            azul: false,
-            rosa: false
-        },
-        categoria: {
-            nombre: "necesers",
-            id: "neceser"
-        },
-        precio: 9999,
-        oferta: true,
-        destacado: false,
-        cantidad: 1
-    },
-    /* neceser-05 */ {
-        id: "neceser-05",
-        nombre: "neceser drigo liso",
-        img: "neceser-drigo-liso.jpg",
-        colores: {
-            gris: false,
-            blanco: false,
-            celeste: false,
-            negro: true,
-            rojo: false,
-            azul: false,
-            rosa: false
-        },
-        categoria: {
-            nombre: "necesers",
-            id: "neceser"
-        },
-        precio: 9999,
-        oferta: true,
-        destacado: false,
-        cantidad: 1
-    },
-    /* neceser-06 */ {
-        id: "neceser-06",
-        nombre: "neceser tachas",
-        img: "neceser-tachas",
-        colores: {
-            gris: false,
-            blanco: false,
-            celeste: false,
-            negro: true,
-            rojo: false,
-            azul: false,
-            rosa: false
-        },
-        categoria: {
-            nombre: "necesers",
-            id: "neceser"
-        },
-        precio: 9999,
-        oferta: true,
-        destacado: false,
-        cantidad: 1
-    },
-    /* neceser-07 */ {
-        id: "neceser-07",
-        nombre: "neceser platinum",
-        img: "neceser-platinum.jpg",
-        colores: {
-            gris: false,
-            blanco: false,
-            celeste: false,
-            negro: true,
-            rojo: false,
-            azul: false,
-            rosa: false
-        },
-        categoria: {
-            nombre: "necesers",
-            id: "neceser"
-        },
-        precio: 9000,
-        oferta: true,
-        destacado: false,
-        cantidad: 1
-    },
-    /* neceser-08 */ {
-        id: "neceser-08",
-        nombre: "neceser metal",
-        img: "necesar-metal.jpg",
-        colores: {
-            gris: false,
-            blanco: false,
-            celeste: false,
-            negro: true,
-            rojo: false,
-            azul: false,
-            rosa: false
-        },
-        categoria: {
-            nombre: "necesers",
-            id: "neceser"
-        },
-        precio: 9999,
-        oferta: true,
-        destacado: false,
-        cantidad: 1
-    },
-    /* neceser-09 */ {
-        id: "neceser-09",
-        nombre: "neceser gajos",
-        img: "neceseres/neceser-gajos.jpg",
-        img2: "neceseres/neceser-gajos-2.jpg",
-        colores: {
-            gris: false,
-            blanco: true,
-            celeste: false,
-            negro: true,
-            rojo: false,
-            azul: false,
-            rosa: false
-        },
-        categoria: {
-            nombre: "necesers",
-            id: "neceser"
-        },
-        precio: 9500,
-        oferta: true,
-        destacado: true,
-        cantidad: 1
-    },
-    /* neceser-10 */ {
-        id: "neceser-10",
-        nombre: "neceser kubo",
-        img: "neceseres/neceser-kubo.jpg",
-        colores: {
-            marron: true,
-            gris: false,
-            blanco: false,
-            celeste: false,
-            negro: true,
-            rojo: false,
-            azul: false,
-            rosa: false
-        },
-        categoria: {
-            nombre: "necesers",
-            id: "neceser"
-        },
-        precio: 9000,
-        oferta: true,
-        destacado: false,
-        cantidad: 1
-    },
-    /* neceser-11 */ {
-        id: "neceser-11",
-        nombre: "neceser zr",
-        img: "neceseres/neceser-zr.jpg",
-        colores: {
-            gris: false,
-            blanco: false,
-            celeste: false,
-            negro: true,
-            rojo: false,
-            azul: false,
-            rosa: false
-        },
-        categoria: {
-            nombre: "necesers",
-            id: "neceser"
-        },
-        precio: 9999,
-        oferta: true,
-        destacado: false,
-        cantidad: 1
-    },
-    /* neceser-12 */ {
-        id: "neceser-12",
-        nombre: "neceser black",
-        img: "neceseres/neceser-black.jpg",
-        colores: {
-            gris: false,
-            blanco: false,
-            celeste: false,
-            negro: true,
-            rojo: false,
-            azul: false,
-            rosa: false
-        },
-        categoria: {
-            nombre: "necesers",
-            id: "neceser"
-        },
-        precio: 9999,
-        oferta: true,
-        destacado: false,
-        cantidad: 1
-    },
+    // /* neceser-01 */ {
+    //     id: "neceser-01",
+    //     nombre: "neceser forza",
+    //     img: "neceser-forza.jpg",
+    //     colores: {
+    //         gris: false,
+    //         blanco: true,
+    //         celeste: false,
+    //         negro: true,
+    //         rojo: false,
+    //         azul: false,
+    //         rosa: false
+    //     },
+    //     categoria: {
+    //         nombre: "necesers",
+    //         id: "neceser"
+    //     },
+    //     precio: 9999,
+    //     oferta: true,
+    //     destacado: false,
+    //     cantidad: 1
+    // },
+    // /* neceser-02 */ {
+    //     id: "neceser-02",
+    //     nombre: "neceser butto liso",
+    //     img: "neceser-butto-liso.jpg",
+    //     colores: {
+    //         gris: false,
+    //         blanco: false,
+    //         celeste: false,
+    //         negro: true,
+    //         rojo: false,
+    //         azul: false,
+    //         rosa: false
+    //     },
+    //     categoria: {
+    //         nombre: "necesers",
+    //         id: "neceser"
+    //     },
+    //     precio: 9999,
+    //     oferta: true,
+    //     destacado: false,
+    //     cantidad: 1
+    // },
+    // /* neceser-03 */ {
+    //     id: "neceser-03",
+    //     nombre: "neceser butto futbol",
+    //     img: "neceser-butto-futbol.jpg",
+    //     colores: {
+    //         gris: false,
+    //         blanco: false,
+    //         celeste: false,
+    //         negro: true,
+    //         rojo: false,
+    //         azul: false,
+    //         rosa: false
+    //     },
+    //     categoria: {
+    //         nombre: "necesers",
+    //         id: "neceser"
+    //     },
+    //     precio: 9999,
+    //     oferta: true,
+    //     destacado: false,
+    //     cantidad: 1
+    // },
+    // /* neceser-04 */ {
+    //     id: "neceser-04",
+    //     nombre: "neceser kubo zr",
+    //     img: "neceser-kubo-zr.jpg",
+    //     colores: {
+    //         gris: false,
+    //         blanco: false,
+    //         celeste: false,
+    //         negro: true,
+    //         rojo: false,
+    //         azul: false,
+    //         rosa: false
+    //     },
+    //     categoria: {
+    //         nombre: "necesers",
+    //         id: "neceser"
+    //     },
+    //     precio: 9999,
+    //     oferta: true,
+    //     destacado: false,
+    //     cantidad: 1
+    // },
+    // /* neceser-05 */ {
+    //     id: "neceser-05",
+    //     nombre: "neceser drigo liso",
+    //     img: "neceser-drigo-liso.jpg",
+    //     colores: {
+    //         gris: false,
+    //         blanco: false,
+    //         celeste: false,
+    //         negro: true,
+    //         rojo: false,
+    //         azul: false,
+    //         rosa: false
+    //     },
+    //     categoria: {
+    //         nombre: "necesers",
+    //         id: "neceser"
+    //     },
+    //     precio: 9999,
+    //     oferta: true,
+    //     destacado: false,
+    //     cantidad: 1
+    // },
+    // /* neceser-06 */ {
+    //     id: "neceser-06",
+    //     nombre: "neceser tachas",
+    //     img: "neceser-tachas",
+    //     colores: {
+    //         gris: false,
+    //         blanco: false,
+    //         celeste: false,
+    //         negro: true,
+    //         rojo: false,
+    //         azul: false,
+    //         rosa: false
+    //     },
+    //     categoria: {
+    //         nombre: "necesers",
+    //         id: "neceser"
+    //     },
+    //     precio: 9999,
+    //     oferta: true,
+    //     destacado: false,
+    //     cantidad: 1
+    // },
+    // /* neceser-07 */ {
+    //     id: "neceser-07",
+    //     nombre: "neceser platinum",
+    //     img: "neceser-platinum.jpg",
+    //     colores: {
+    //         gris: false,
+    //         blanco: false,
+    //         celeste: false,
+    //         negro: true,
+    //         rojo: false,
+    //         azul: false,
+    //         rosa: false
+    //     },
+    //     categoria: {
+    //         nombre: "necesers",
+    //         id: "neceser"
+    //     },
+    //     precio: 9000,
+    //     oferta: true,
+    //     destacado: false,
+    //     cantidad: 1
+    // },
+    // /* neceser-08 */ {
+    //     id: "neceser-08",
+    //     nombre: "neceser metal",
+    //     img: "necesar-metal.jpg",
+    //     colores: {
+    //         gris: false,
+    //         blanco: false,
+    //         celeste: false,
+    //         negro: true,
+    //         rojo: false,
+    //         azul: false,
+    //         rosa: false
+    //     },
+    //     categoria: {
+    //         nombre: "necesers",
+    //         id: "neceser"
+    //     },
+    //     precio: 9999,
+    //     oferta: true,
+    //     destacado: false,
+    //     cantidad: 1
+    // },
+    // /* neceser-09 */ {
+    //     id: "9",
+    //     nombre: "neceser gajos",
+    //     img: "neceseres/neceser-gajos.jpg",
+    //     img2: "neceseres/neceser-gajos-2.jpg",
+    //     colores: {
+    //         gris: false,
+    //         blanco: true,
+    //         celeste: false,
+    //         negro: true,
+    //         rojo: false,
+    //         azul: false,
+    //         rosa: false
+    //     },
+    //     categoria: {
+    //         nombre: "necesers",
+    //         id: "neceser"
+    //     },
+    //     precio: 9500,
+    //     oferta: true,
+    //     destacado: true,
+    //     cantidad: 1
+    // },
+    // /* neceser-10 */ {
+    //     id: "neceser-10",
+    //     nombre: "neceser kubo",
+    //     img: "neceseres/neceser-kubo.jpg",
+    //     colores: {
+    //         marron: true,
+    //         gris: false,
+    //         blanco: false,
+    //         celeste: false,
+    //         negro: true,
+    //         rojo: false,
+    //         azul: false,
+    //         rosa: false
+    //     },
+    //     categoria: {
+    //         nombre: "necesers",
+    //         id: "neceser"
+    //     },
+    //     precio: 9000,
+    //     oferta: true,
+    //     destacado: false,
+    //     cantidad: 1
+    // },
+    // /* neceser-11 */ {
+    //     id: "neceser-11",
+    //     nombre: "neceser zr",
+    //     img: "neceseres/neceser-zr.jpg",
+    //     colores: {
+    //         gris: false,
+    //         blanco: false,
+    //         celeste: false,
+    //         negro: true,
+    //         rojo: false,
+    //         azul: false,
+    //         rosa: false
+    //     },
+    //     categoria: {
+    //         nombre: "necesers",
+    //         id: "neceser"
+    //     },
+    //     precio: 9999,
+    //     oferta: true,
+    //     destacado: false,
+    //     cantidad: 1
+    // },
+    // /* neceser-12 */ {
+    //     id: "neceser-12",
+    //     nombre: "neceser black",
+    //     img: "neceseres/neceser-black.jpg",
+    //     colores: {
+    //         gris: false,
+    //         blanco: false,
+    //         celeste: false,
+    //         negro: true,
+    //         rojo: false,
+    //         azul: false,
+    //         rosa: false
+    //     },
+    //     categoria: {
+    //         nombre: "necesers",
+    //         id: "neceser"
+    //     },
+    //     precio: 9999,
+    //     oferta: true,
+    //     destacado: false,
+    //     cantidad: 1
+    // },
 
-    // MOCHILAS
+    // // MOCHILAS
 
-    /* mochila-01 */ {
-        id: "mochila-01",
-        nombre: "bolso cilindro",
-        img: "mochilas/bolso-cilindro.jpg",
-        colores: {
-            gris: false,
-            blanco: false,
-            celeste: false,
-            negro: true,
-            rojo: false,
-            azul: false,
-            rosa: false
-        },
-        categoria: {
-            nombre: "mochilas",
-            id: "mochila"
-        },
-        precio: 15000,
-        oferta: true,
-        destacado: false,
-        cantidad: 1
-    },
-    /* mochila-02 */{
-        id: "mochila-02",
-        nombre: "mochila kubo",
-        img: "mochilas/mochila-kubo.jpg",
-        colores: {
-            gris: false,
-            blanco: false,
-            celeste: false,
-            negro: true,
-            rojo: false,
-            azul: false,
-            rosa: false
-        },
-        categoria: {
-            nombre: "mochilas",
-            id: "mochila"
-        },
-        precio: 15600,
-        oferta: true,
-        destacado: false,
-        cantidad: 1
-    },
-    /* mochila-03 */{
-        id: "mochila-03",
-        nombre: "mochila line",
-        img: "mochilas/mochila-line.jpg",
-        img2: "mochilas/mochila-line-2.jpg",
-        colores: {
-            gris: false,
-            blanco: false,
-            celeste: false,
-            negro: true,
-            rojo: false,
-            azul: false,
-            rosa: false
-        },
-        categoria: {
-            nombre: "mochilas",
-            id: "mochila"
-        },
-        precio: 15500,
-        oferta: false,
-        destacado: true,
-        cantidad: 1
-    },
-    /* mochila-04 */{
-        id: "mochila-04",
-        nombre: "mochila xl",
-        img: "mochila-xl.jpg",
-        colores: {
-            gris: false,
-            blanco: false,
-            celeste: false,
-            negro: true,
-            rojo: false,
-            azul: false,
-            rosa: false
-        },
-        categoria: {
-            nombre: "mochilas",
-            id: "mochila"
-        },
-        precio: 15600,
-        oferta: true,
-        destacado: false,
-        cantidad: 1
-    },
+    // /* mochila-01 */ {
+    //     id: "mochila-01",
+    //     nombre: "bolso cilindro",
+    //     img: "mochilas/bolso-cilindro.jpg",
+    //     colores: {
+    //         gris: false,
+    //         blanco: false,
+    //         celeste: false,
+    //         negro: true,
+    //         rojo: false,
+    //         azul: false,
+    //         rosa: false
+    //     },
+    //     categoria: {
+    //         nombre: "mochilas",
+    //         id: "mochila"
+    //     },
+    //     precio: 15000,
+    //     oferta: true,
+    //     destacado: false,
+    //     cantidad: 1
+    // },
+    // /* mochila-02 */{
+    //     id: "mochila-02",
+    //     nombre: "mochila kubo",
+    //     img: "mochilas/mochila-kubo.jpg",
+    //     colores: {
+    //         gris: false,
+    //         blanco: false,
+    //         celeste: false,
+    //         negro: true,
+    //         rojo: false,
+    //         azul: false,
+    //         rosa: false
+    //     },
+    //     categoria: {
+    //         nombre: "mochilas",
+    //         id: "mochila"
+    //     },
+    //     precio: 15600,
+    //     oferta: true,
+    //     destacado: false,
+    //     cantidad: 1
+    // },
+    // /* mochila-03 */{
+    //     id: "10",
+    //     nombre: "mochila line",
+    //     img: "mochilas/mochila-line.jpg",
+    //     img2: "mochilas/mochila-line-2.jpg",
+    //     colores: {
+    //         gris: false,
+    //         blanco: false,
+    //         celeste: false,
+    //         negro: true,
+    //         rojo: false,
+    //         azul: false,
+    //         rosa: false
+    //     },
+    //     categoria: {
+    //         nombre: "mochilas",
+    //         id: "mochila"
+    //     },
+    //     precio: 15500,
+    //     oferta: false,
+    //     destacado: true,
+    //     cantidad: 1
+    // },
+    // /* mochila-04 */{
+    //     id: "mochila-04",
+    //     nombre: "mochila xl",
+    //     img: "mochila-xl.jpg",
+    //     colores: {
+    //         gris: false,
+    //         blanco: false,
+    //         celeste: false,
+    //         negro: true,
+    //         rojo: false,
+    //         azul: false,
+    //         rosa: false
+    //     },
+    //     categoria: {
+    //         nombre: "mochilas",
+    //         id: "mochila"
+    //     },
+    //     precio: 15600,
+    //     oferta: true,
+    //     destacado: false,
+    //     cantidad: 1
+    // },
 
-    // MEDIAS
+    // // MEDIAS
     
-    /* media-01 */ {
-        id: "media-01",
-        nombre: "medias antideslizantes (calcio)",
-        img: "medias/medias-antideslizantes.jpg",
-        img2: "medias/medias-antideslizantes-2.jpg",
-        colores: {
-            blanco: true,
-            celeste: true,
-            negro: true,
-            rojo: true,
-            azul: false
-        },
-        categoria: {
-            nombre: "medias",
-            id: "media"
-        },
-        precio: 4200,
-        oferta: true,
-        destacado: true,
-        cantidad: 1
-    },
-    /* media-02 */ {
-        id: "media-02",
-        nombre: "medias pantorilleras",
-        img: "medias-pantorrilleras.jpg",
-        colores: {
-            blanco: true,
-            celeste: true,
-            negro: true,
-            rojo: true,
-            azul: true
-        },
-        categoria: {
-            nombre: "medias",
-            id: "media"
-        },
-        precio: 3200,
-        oferta: true,
-        destacado: false,
-        cantidad: 1
-    },
-    /* media-03 */ {
-        id: "media-03",
-        nombre: "cinta cohesiva",
-        img: "cinta-cohesiva.jpg",
-        colores: {
-            blanco: true,
-            celeste: false,
-            negro: true,
-            rojo: true,
-            azul: false
-        },
-        categoria: {
-            nombre: "medias",
-            id: "media"
-        },
-        precio: 1300,
-        oferta: true,
-        destacado: false,
-        cantidad: 1
-    },
-    /* media-04 */ {
-        id: "media-04",
-        nombre: "combo antideslizante + pantorillera + cinta",
-        img: "combo-mediasx3.jpg",
-        colores: {
-            blanco: true,
-            celeste: false,
-            negro: true,
-            rojo: true,
-            azul: false
-        },
-        categoria: {
-            nombre: "medias",
-            id: "media"
-        },
-        precio: 8400,
-        oferta: true,
-        destacado: false,
-        cantidad: 1
-    },
+    // /* media-01 */ {
+    //     id: "20",
+    //     nombre: "medias antideslizantes (calcio)",
+    //     img: "medias/medias-antideslizantes.jpg",
+    //     img2: "medias/medias-antideslizantes-2.jpg",
+    //     colores: {
+    //         blanco: true,
+    //         celeste: true,
+    //         negro: true,
+    //         rojo: true,
+    //         azul: false
+    //     },
+    //     categoria: {
+    //         nombre: "medias",
+    //         id: "media"
+    //     },
+    //     precio: 4200,
+    //     oferta: true,
+    //     destacado: true,
+    //     cantidad: 1
+    // },
+    // /* media-02 */ {
+    //     id: "media-02",
+    //     nombre: "medias pantorilleras",
+    //     img: "medias-pantorrilleras.jpg",
+    //     colores: {
+    //         blanco: true,
+    //         celeste: true,
+    //         negro: true,
+    //         rojo: true,
+    //         azul: true
+    //     },
+    //     categoria: {
+    //         nombre: "medias",
+    //         id: "media"
+    //     },
+    //     precio: 3200,
+    //     oferta: true,
+    //     destacado: false,
+    //     cantidad: 1
+    // },
+    // /* media-03 */ {
+    //     id: "media-03",
+    //     nombre: "cinta cohesiva",
+    //     img: "cinta-cohesiva.jpg",
+    //     colores: {
+    //         blanco: true,
+    //         celeste: false,
+    //         negro: true,
+    //         rojo: true,
+    //         azul: false
+    //     },
+    //     categoria: {
+    //         nombre: "medias",
+    //         id: "media"
+    //     },
+    //     precio: 1300,
+    //     oferta: true,
+    //     destacado: false,
+    //     cantidad: 1
+    // },
+    // /* media-04 */ {
+    //     id: "media-04",
+    //     nombre: "combo antideslizante + pantorillera + cinta",
+    //     img: "combo-mediasx3.jpg",
+    //     colores: {
+    //         blanco: true,
+    //         celeste: false,
+    //         negro: true,
+    //         rojo: true,
+    //         azul: false
+    //     },
+    //     categoria: {
+    //         nombre: "medias",
+    //         id: "media"
+    //     },
+    //     precio: 8400,
+    //     oferta: true,
+    //     destacado: false,
+    //     cantidad: 1
+    // },
 
-    // BILLETERAS
+    // // BILLETERAS
     
-    /* billetera-01 */ {
-        id: "billetera-01",
-        nombre: "billetera gajos",
-        img: "billetera-gajos.jpg",
-        categoria: {
-            nombre: "billeteras",
-            id: "billetera"
-        },
-        precio: 8000,
-        oferta: true,
-        destacado: false,
-        cantidad: 1
-    },
-    /* billetera-02 */ {
-        id: "billetera-02",
-        nombre: "billetera black",
-        img: "billetera-black.jpg",
-        categoria: {
-            nombre: "billeteras",
-            id: "billetera"
-        },
-        precio: 7800,
-        oferta: true,
-        destacado: false,
-        cantidad: 1
-    },
+    // /* billetera-01 */ {
+    //     id: "billetera-01",
+    //     nombre: "billetera gajos",
+    //     img: "billetera-gajos.jpg",
+    //     categoria: {
+    //         nombre: "billeteras",
+    //         id: "billetera"
+    //     },
+    //     precio: 8000,
+    //     oferta: true,
+    //     destacado: false,
+    //     cantidad: 1
+    // },
+    // /* billetera-02 */ {
+    //     id: "billetera-02",
+    //     nombre: "billetera black",
+    //     img: "billetera-black.jpg",
+    //     categoria: {
+    //         nombre: "billeteras",
+    //         id: "billetera"
+    //     },
+    //     precio: 7800,
+    //     oferta: true,
+    //     destacado: false,
+    //     cantidad: 1
+    // },
 
-    // MATE
+    // // MATE
 
-    /* mate-01 */ {
-        id: "mate-01",
-        nombre: "matera gajos negra",
-        img: "matera-gajos-black.jpg",
-        categoria: {
-            nombre: "mates",
-            id: "mate"
-        },
-        precio: 13900,
-        oferta: true,
-        destacado: false,
-        cantidad: 1
-    },
-    /* mate-02 */ {
-        id: "mate-01",
-        nombre: "matera gajos negra",
-        img: "matera-gajos-black.jpg",
-        categoria: {
-            nombre: "mates",
-            id: "mate"
-        },
-        precio: 13900,
-        oferta: true,
-        destacado: false,
-        cantidad: 1
-    },
-    /* mate-03 */ {
-        id: "mate-02",
-        nombre: "matera cilindrada",
-        img: "matera-cilindrada.jpg",
-        categoria: {
-            nombre: "mates",
-            id: "mate"
-        },
-        precio: 13900,
-        oferta: true,
-        destacado: false,
-        cantidad: 1
-    },
-    /* mate-04 */ {
-        id: "mate-03",
-        nombre: "canasta matera",
-        img: "canasta-matera-futbol.jpg",
-        categoria: {
-            nombre: "mates",
-            id: "mate"
-        },
-        precio: 15000,
-        oferta: true,
-        destacado: false,
-        cantidad: 1
-    },
+    // /* mate-01 */ {
+    //     id: "mate-01",
+    //     nombre: "matera gajos negra",
+    //     img: "matera-gajos-black.jpg",
+    //     categoria: {
+    //         nombre: "mates",
+    //         id: "mate"
+    //     },
+    //     precio: 13900,
+    //     oferta: true,
+    //     destacado: false,
+    //     cantidad: 1
+    // },
+    // /* mate-02 */ {
+    //     id: "mate-01",
+    //     nombre: "matera gajos negra",
+    //     img: "matera-gajos-black.jpg",
+    //     categoria: {
+    //         nombre: "mates",
+    //         id: "mate"
+    //     },
+    //     precio: 13900,
+    //     oferta: true,
+    //     destacado: false,
+    //     cantidad: 1
+    // },
+    // /* mate-03 */ {
+    //     id: "mate-02",
+    //     nombre: "matera cilindrada",
+    //     img: "matera-cilindrada.jpg",
+    //     categoria: {
+    //         nombre: "mates",
+    //         id: "mate"
+    //     },
+    //     precio: 13900,
+    //     oferta: true,
+    //     destacado: false,
+    //     cantidad: 1
+    // },
+    // /* mate-04 */ {
+    //     id: "mate-03",
+    //     nombre: "canasta matera",
+    //     img: "canasta-matera-futbol.jpg",
+    //     categoria: {
+    //         nombre: "mates",
+    //         id: "mate"
+    //     },
+    //     precio: 15000,
+    //     oferta: true,
+    //     destacado: false,
+    //     cantidad: 1
+    // },
 
-    // BOTINEROS
+    // // BOTINEROS
 
-    /* botinero-01 */ {
-        id: "botinero-01",
-        nombre: "botinero gajos",
-        img: "botineros-gajos.jpg",
-        colores: {
-            negro: true,
-            blanco: false
-        },
-        categoria: {
-            nombre: "botineros",
-            id: "botinero"
-        },
-        precio: 12600,
-        oferta: true,
-        destacado: false,
-        cantidad: 1
-    },
-    /* botinero-02 */ {
-        id: "botinero-02",
-        nombre: "botinero butto",
-        img: "botineros-butto.jpg",
-        colores: {
-            negro: true,
-            blanco: false
-        },
-        categoria: {
-            nombre: "botineros",
-            id: "botinero"
-        },
-        precio: 13000,
-        oferta: true,
-        destacado: false,
-        cantidad: 1
-    },
-    /* botinero-03 */ {
-        id: "morral-01",
-        nombre: "mini morral",
-        img: "morrales/mini-morral.jpg",
-        img2: "morrales/mini-morral-2.jpg",
-        colores: {
-            negro: true,
-            blanco: true
-        },
-        categoria: {
-            nombre: "morrales",
-            id: "morral"
-        },
-        precio: 10300,
-        oferta: true,
-        destacado: true,
-        cantidad: 1
-    },
-    /* botinero-04 */ {
-        id: "morral-02",
-        nombre: "morralsin",
-        img: "morralsin.jpg",
-        colores: {
-            negro: true,
-            blanco: true
-        },
-        categoria: {
-            nombre: "morrales",
-            id: "morral"
-        },
-        precio: 10300,
-        oferta: true,
-        destacado: false,
-        cantidad: 1
-    },
-    /* botinero-05 */ {
-        id: "morral-03",
-        nombre: "riñora copa",
-        img: "riñonera-copa.jpg",
-        colores: {
-            negro: true,
-            blanco: false
-        },
-        categoria: {
-            nombre: "morrales",
-            id: "morral"
-        },
-        precio: 9000,
-        oferta: true,
-        destacado: false,
-        cantidad: 1
-    }, 
+    // /* botinero-01 */ {
+    //     id: "botinero-01",
+    //     nombre: "botinero gajos",
+    //     img: "botineros-gajos.jpg",
+    //     colores: {
+    //         negro: true,
+    //         blanco: false
+    //     },
+    //     categoria: {
+    //         nombre: "botineros",
+    //         id: "botinero"
+    //     },
+    //     precio: 12600,
+    //     oferta: true,
+    //     destacado: false,
+    //     cantidad: 1
+    // },
+    // /* botinero-02 */ {
+    //     id: "botinero-02",
+    //     nombre: "botinero butto",
+    //     img: "botineros-butto.jpg",
+    //     colores: {
+    //         negro: true,
+    //         blanco: false
+    //     },
+    //     categoria: {
+    //         nombre: "botineros",
+    //         id: "botinero"
+    //     },
+    //     precio: 13000,
+    //     oferta: true,
+    //     destacado: false,
+    //     cantidad: 1
+    // },
+    // /* botinero-03 */ {
+    //     id: "15",
+    //     nombre: "mini morral",
+    //     img: "morrales/mini-morral.jpg",
+    //     img2: "morrales/mini-morral-2.jpg",
+    //     colores: {
+    //         negro: true,
+    //         blanco: true
+    //     },
+    //     categoria: {
+    //         nombre: "morrales",
+    //         id: "morral"
+    //     },
+    //     precio: 10300,
+    //     oferta: true,
+    //     destacado: true,
+    //     cantidad: 1
+    // },
+    // /* botinero-04 */ {
+    //     id: "morral-02",
+    //     nombre: "morralsin",
+    //     img: "morralsin.jpg",
+    //     colores: {
+    //         negro: true,
+    //         blanco: true
+    //     },
+    //     categoria: {
+    //         nombre: "morrales",
+    //         id: "morral"
+    //     },
+    //     precio: 10300,
+    //     oferta: true,
+    //     destacado: false,
+    //     cantidad: 1
+    // },
+    // /* botinero-05 */ {
+    //     id: "morral-03",
+    //     nombre: "riñora copa",
+    //     img: "riñonera-copa.jpg",
+    //     colores: {
+    //         negro: true,
+    //         blanco: false
+    //     },
+    //     categoria: {
+    //         nombre: "morrales",
+    //         id: "morral"
+    //     },
+    //     precio: 9000,
+    //     oferta: true,
+    //     destacado: false,
+    //     cantidad: 1
+    // }, 
 ]
+
 
 // Scroll
 window.addEventListener("scroll", function() {
@@ -798,8 +799,9 @@ stockProductos.forEach((producto) => {
             </div>
             </div>
             <div class="product-buttons">
-                <a href="#" class="button-buy button">comprar</a>
-                <a href="#" class="button-view button"><i class="fa-regular fa-eye eye-icon "></i>ver</a> 
+                <button onclick="addProduct(${id})" id="add${id}"  class="button-buy button">comprar</button>
+                
+                <a href="" class="button-view button"><i class="fa-regular fa-eye eye-icon "></i>ver</a> 
             </div>   
         </div>
     </div>
@@ -836,6 +838,109 @@ stockProductos.forEach((producto) => {
         `
     }
 })
+
+// Añadir productos al cart
+
+let cart = []
+let totalCart = document.getElementById('total-cart')
+let subTotalCart = document.getElementById('subtotal-cart')
+let cuotas= document.querySelector('.cart-cuotas-text')
+let cartCount = document.querySelector('.cart-count')
+
+
+document.addEventListener('DOMContentLoaded', () =>{
+    cart = JSON.parse(localStorage.getItem('cart')) || []
+    mostrarCarrito()
+})
+
+function addProduct(id) {
+    const exists = cart.some(prod => prod.id == id)
+    if (exists) {
+        const prod = cart.map(prod => { 
+            if (prod.id == id){
+                prod.cantidad++
+            }
+        })
+    } else {
+        const item = stockProductos.find((prod) => prod.id === id)
+        cart.push(item)
+    }
+    
+    mostrarCarrito()
+}
+
+const mostrarCarrito = () => {
+    const cartItem = document.getElementById('cart')
+    cartItem.innerHTML = ''
+    cart.forEach((prod) => {
+        const {id,nombre, precio, img, cantidad} = prod
+        cartItem.innerHTML +=
+        `
+        <div class="cart-item">
+            <div class="item-img">
+                <img src="./assets/imgs/products/${img}"/>
+            </div>
+            <div class="item-info">
+                <div class="item-info-text">
+                    <h3 class="item-title">${nombre}</h3>
+                    <span class="item-price">$${precio}</span>
+                    <div class="item-handler">
+                        <span onclick="downProduct(${id})" class="quantity-handler down">-</span>
+                        <span class="item-quantity">${cantidad}</span>
+                        <span onclick="upProduct(${id})" class="quantity-handler up">+</span>
+                        <a onclick="deleteProduct(${id})" class="item-trash"><i class="fa-solid fa-trash-can"></i></a>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        `
+    })
+    if (cart.length == 0) {
+        cartItem.innerHTML = `<p>Aun no agregaste nada.</p>`
+        cuotas.innerText = ""
+    }
+    else{
+        cuotas.innerText = "hasta 4 cuotas de $" + cart.reduce((acc, prod) => acc + (prod.cantidad * prod.precio) / 4 , 0) 
+
+    }
+    subTotalCart.innerText = "$" + cart.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0)
+    totalCart.innerText = "$" + cart.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0)
+    
+    
+    
+    guardarStorage()
+}
+
+function upProduct(id) {
+    const productId = id
+    cart.forEach((prod) => {
+        if (prod.id == id) {
+            prod.cantidad++
+        }
+    })
+    mostrarCarrito()
+}
+
+function downProduct(id) {
+    const productId = id
+    cart.forEach((prod) => {
+        if (prod.id == id && prod.cantidad > 1) {
+            prod.cantidad--
+        }
+    })
+    mostrarCarrito()
+}
+
+function deleteProduct(id) {
+    const productId = id
+    cart = cart.filter((product) => product.id !== productId)
+    mostrarCarrito()
+}
+
+function guardarStorage(){
+    localStorage.setItem("cart", JSON.stringify(cart))
+}
+
 
 // SPLIDE JS
 const splideOffers = new Splide( '.splide-offers', {
@@ -902,3 +1007,16 @@ listElements.forEach(listElement => {
 
     })
 });
+
+
+const optBox = document.querySelector('.cart-local-bottom');
+const optLocal = document.querySelector('#opt-local');
+
+optLocal.addEventListener('change', function() {
+    if (optLocal.checked) {
+        optBox.classList.add('estilo-afectado');
+      } else {
+        optBox.classList.remove('estilo-afectado');
+      }
+});
+
