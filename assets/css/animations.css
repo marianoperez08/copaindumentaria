@@ -59,15 +59,6 @@
     }
 }
 
-.navbar-top {
-    display: flex;
-}
-
-.navbar-top-text {
-    animation: scroll 5s linear infinite;
-    -webkit-animation: scroll 5s linear infinite;
-}
-
 .product:hover > .product-info > .product-buttons {
     visibility: visible;
 }
